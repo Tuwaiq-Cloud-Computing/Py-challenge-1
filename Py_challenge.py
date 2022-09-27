@@ -1,9 +1,12 @@
 
-def sortList(list):
-    list.sort()
-    list.reverse()
+
+def sortLi(list):
+
+    for i in list:
+        list.append(list.pop(list.index(0)))
+
     print(list)
 
-sortList([4,8,0,9,0,5,3,0])
+sortLi([0,0,0,0,8,6,5,0])
 
-sortList([0,0,0,0,8,6,5,0])
+sortLi([4,-8,0,9,0,5,3,0])
